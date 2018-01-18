@@ -1,7 +1,7 @@
 {
-  "name": "twitch_visualizer",
+  "name": "client_list",
   "version": "1.0.0",
-  "description": "visualize user data on twitch.tv",
+  "description": "create a site to manage a client list",
   "main": "Back_End/server.js",
   "scripts": {
     "build-watch": "webpack -w",
