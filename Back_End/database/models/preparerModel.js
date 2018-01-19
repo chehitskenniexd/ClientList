@@ -1,7 +1,7 @@
 'use strict'
 
 const Sequelize = require('sequelize');
-const db = require('db');
+const db = require('../DBIndex');
 
 const Preparer = db.define('preparer', {
     firstName: Sequelize.STRING,

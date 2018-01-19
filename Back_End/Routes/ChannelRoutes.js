@@ -3,7 +3,6 @@
 const channelRouter = require('express').Router();
 const Promise = require('bluebird');
 const http = require('http');
-//const axiosUtils = require('../../Utilities/axiosUtils');
 const axios = require('axios');
 const Channels = require('../database/models/channelModel');
 const Follows = require('../database/models/followsModel');

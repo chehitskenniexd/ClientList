@@ -26,9 +26,9 @@ module.exports = db;
 
 // sync with models and create if necessary
 
-function sync(retries = 0, maxRetries=5){
-    return db.sync({force:true})
-        .then(res => console.log(`Synced with models at ${dbUrl}`))
-}
+// function sync(retries = 0, maxRetries=5){
+//     return db.sync({force:true})
+//         .then(res => console.log(`Synced with models at ${dbUrl}`))
+// }
 
-db.didSync = sync();
+// db.didSync = sync();

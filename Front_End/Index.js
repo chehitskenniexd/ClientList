@@ -7,9 +7,7 @@ import ReactDOM from 'react-dom';
 import ReduxStore from './Redux/ReduxStore';
 import { Provider } from 'react-redux';
 import { Route, Router, IndexRoute, browserHistory } from 'react-router';
-import NavbarContainer from './Containers/NavbarContainer';
-import SearchContainer from './Containers/SearchContainer';
-import ChannelContainer from './Containers/ChannelContainer';
+import MainPageContainer from './Containers/MainPageContainer';
 
 export const bHistory = browserHistory;
 
@@ -17,11 +15,11 @@ ReactDOM.render(
     <Provider store={ReduxStore}>
         <div className="container flexbox-container">
             <Router history={browserHistory}>
-                <Route path="/" component={NavbarContainer}>
-                    <IndexRoute component={SearchContainer} />
+                <Route path="/" component={MainPageContainer}>
+                    {/* <IndexRoute component={SearchContainer} />
                     <Route path=":channelName" 
                     component={ChannelContainer} 
-                    />
+                    /> */}
                 </Route>
             </Router>
         </div>
