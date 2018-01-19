@@ -24,3 +24,9 @@
 .user-information-cards{
     text-align: center;
 }
+
+.textfield {
+    width: 200 !important;
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+}
