@@ -3,10 +3,14 @@
 const Channels = require('./channelModel');
 const Follows = require('./followsModel');
 const Videos = require('./videosModel');
+const Client = require('./clientModel');
+const Preparer = require('./clientModel');
 
 // ------------ Database Associations ------------ //
 
 // Channel => Follows Association
+Preparer.hasMany(Client);
+Client.belongsTo(Preparer);
 Channels.hasMany(Follows);
 Follows.belongsTo(Channels);
 
@@ -15,5 +19,7 @@ Videos.belongsTo(Channels);
 
 module.exports = {
     Channels,
-    Follows
+    Follows,
+    Client,
+    Preparer
 }
