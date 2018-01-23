@@ -10,6 +10,7 @@ import Textfield from 'material-ui/Textfield';
 import { withStyles } from 'material-ui/styles';
 import Checkbox from 'material-ui/Checkbox';
 import { FormGroup, FormControlLabel } from 'material-ui/Form';
+import EICForm from './EICFormComponent';
 
 export default class MainPage extends React.Component {
     constructor(props) {
@@ -137,6 +138,10 @@ export default class MainPage extends React.Component {
                         label="Missing Documents"
                     />
                 </FormGroup>
+                <div>
+                    <EICForm>
+                    </EICForm>
+                </div>
                 <Textfield 
                     className="preparer-input textfield"
                     label="Preparer"
